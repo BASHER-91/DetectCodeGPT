@@ -13,7 +13,8 @@ def preprocess_and_save(args):
     
 
 
-    cache_dir = args.cache_dir
+    # Expand ~ and convert to absolute path to avoid Windows symlink issues
+    cache_dir = os.path.abspath(os.path.expanduser(args.cache_dir))
     os.environ["XDG_CACHE_HOME"] = cache_dir
     if not os.path.exists(cache_dir):
         os.makedirs(cache_dir)
