@@ -24,3 +24,9 @@ tree-sitter
 
 # Web requests (for API calls)
 requests
+
+# GUI support (for cpp-detector)
+# Note: tkinter is usually included with Python, but listed here for completeness
+# On Linux: sudo apt-get install python3-tk
+# On macOS: included with Python
+# On Windows: included with Python

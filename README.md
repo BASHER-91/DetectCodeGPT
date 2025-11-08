@@ -10,10 +10,32 @@
 
 How can we develop zero-shot detection of machine generated codes? Welcome to the repository for the research paper: **"Between Lines of Code: Unraveling the Distinct Patterns of Machine and Human Programmers."** Our paper has been accepted to the 47th International Conference on Software Engineering (**ICSE 2025**).
 
+## NEW: C++ Edition with GUI
+
+We've created an enhanced version of DetectCodeGPT specifically for analyzing C++ projects! Features include:
+
+- 🚀 **GPU Acceleration**: Automatic GPU detection (CUDA/MPS) for faster processing
+- 🖥️ **User-Friendly GUI**: Intuitive interface for configuration and monitoring
+- 📁 **Multi-Project Support**: Scan entire directories with multiple C++ projects
+- 📊 **Comprehensive Reporting**: JSON output with detailed scores and human-readable reports
+- ⚡ **CLI Mode**: Command-line interface for automation
+
+**Quick Start:**
+
+```bash
+cd cpp-detector
+python main_app.py  # Launch GUI
+# OR
+python main_app.py --cli --directory /path/to/cpp/projects  # CLI mode
+```
+
+See [cpp-detector/README.md](cpp-detector/README.md) for detailed documentation.
+
 ## Table of Contents
 
 - [DetectCodeGPT](#detectcodegpt)
   - [Table of Contents](#table-of-contents)
+  - [NEW: C++ Edition with GUI](#new-c-edition-with-gui)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Data Preparation](#data-preparation)
